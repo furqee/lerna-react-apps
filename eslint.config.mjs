@@ -7,6 +7,7 @@ import react from "eslint-plugin-react";
 import importPlugin from "eslint-plugin-import";
 import prettierPlugin from "eslint-plugin-prettier";
 import eslintConfigPrettier from "eslint-config-prettier";
+import storyBookPlugin from "eslint-plugin-storybook";
 
 export default tseslint.config(
   { ignores: ["dist"] },
@@ -42,6 +43,7 @@ export default tseslint.config(
       "react-hooks": reactHooks,
       "react-refresh": reactRefresh,
       prettier: prettierPlugin,
+      storybook: storyBookPlugin,
     },
     rules: {
       ...react.configs.recommended.rules,
