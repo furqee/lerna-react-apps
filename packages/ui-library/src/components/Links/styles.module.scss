@@ -1,0 +1,12 @@
+.links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  border: 1px solid green;
+  list-style-type: none;
+  li {
+    padding: 5px 10px;
+  }
+}
