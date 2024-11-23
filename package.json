@@ -9,7 +9,7 @@
     "react-dom": "^18.3.1"
   },
   "scripts": {
-    "start:ui-library": "lerna run --scope ui-library storybook --stream --loglevel debug",
+    "start:ui-library": "lerna run --scope ui-library storybook --stream",
     "build:ui-library": "lerna run --scope ui-library build --stream",
     "test:ui-library": "lerna run --scope ui-library test --stream",
     "build": "lerna run build --stream",
