@@ -26,14 +26,18 @@ export default tseslint.config(
       },
     },
     plugins: {
-      react: react,
+      react,
       "react-hooks": reactHooks,
       "react-refresh": reactRefresh,
     },
     rules: {
       ...react.configs.recommended.rules,
       ...reactHooks.configs.recommended.rules,
-      "react/react-in-jsx-scope": "off", // Disable the rule
+      "react/react-in-jsx-scope": ["off"],
+      "react/jsx-uses-react": ["off"],
+      "react/jsx-props-no-spreading": ["warn"],
+      "react/no-unescaped-entities": ["off"],
+      "react/jsx-filename-extension": [1, { extensions: [".jsx", ".tsx"] }],
       "react-refresh/only-export-components": [
         "warn",
         { allowConstantExport: true },
