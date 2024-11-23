@@ -1,3 +1,4 @@
+/* eslint-disable import/no-nodejs-modules */
 import * as path from "path";
 import { getBaseConfig } from "../../vite.config";
 
