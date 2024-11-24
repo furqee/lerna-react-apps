@@ -7,8 +7,8 @@
   "scripts": {
     "start:ui-library": "lerna run --scope ui-library storybook --stream",
     "build:ui-library": "lerna run --scope ui-library build --stream",
-    "lint:ui-library": "lerna run --scope ui-library eslint -c eslint.config.mjs --stream",
-    "format:ui-library": "lerna run --scope ui-library prettier --write \"**/src/*.{ts,tsx}\" --stream",
+    "format:ui-library": "lerna run --scope ui-library format",
+    "lint:ui-library": "lerna run --scope ui-library lint",
     "test:ui-library": "lerna run --scope ui-library test --stream",
     "build": "lerna run build --stream",
     "test": "NODE_ENV=test jest --coverage",
@@ -54,9 +54,9 @@
     "vite": "^5.4.11"
   },
   "lint-staged": {
-    "src/*.{ts,tsx}": [
-      "yarn lint:ui-library",
+    "packages/*/src/*.{ts,tsx}": [
       "yarn format:ui-library",
+      "yarn lint:ui-library",
       "yarn test:ui-library --findRelatedTests --bail"
     ]
   }

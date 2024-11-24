@@ -9,6 +9,7 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
+    "format": "prettier --write \"**/src/*.{ts,tsx}\"",
     "lint": "eslint -c ../../eslint.config.mjs",
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
