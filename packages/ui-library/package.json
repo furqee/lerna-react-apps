@@ -11,6 +11,7 @@
     "build": "tsc -b && vite build",
     "format": "prettier --write \"**/src/*.{ts,tsx}\"",
     "lint": "eslint -c ../../eslint.config.mjs",
+    "lint:fix": "eslint -c ../../eslint.config.mjs --fix",
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"

@@ -9,6 +9,7 @@
     "build:ui-library": "lerna run --scope ui-library build --stream",
     "format:ui-library": "lerna run --scope ui-library format",
     "lint:ui-library": "lerna run --scope ui-library lint",
+    "lint:fix:ui-library": "lerna run --scope ui-library lint:fix",
     "test:ui-library": "lerna run --scope ui-library test --stream",
     "build": "lerna run build --stream",
     "test": "NODE_ENV=test jest --coverage",
