@@ -2,7 +2,7 @@
   "name": "@furqe/ui-library",
   "private": false,
   "type": "module",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "./dist/ui-library.umd.cjs",
   "module": "./dist/ui-library.js",
   "types": "dist/types/index.d.ts",
