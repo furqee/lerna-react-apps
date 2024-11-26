@@ -1,5 +1,5 @@
 {
-  "name": "@furqe",
+  "name": "furqe",
   "private": true,
   "workspaces": [
     "packages/*"
