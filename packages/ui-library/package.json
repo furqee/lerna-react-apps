@@ -1,6 +1,6 @@
 {
   "name": "ui-library",
-  "private": true,
+  "private": false,
   "type": "module",
   "version": "1.0.0",
   "main": "./dist/ui-library.umd.cjs",
