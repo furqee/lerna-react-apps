@@ -5,7 +5,7 @@
   "version": "1.0.0",
   "files": [
     "dist",
-    "README.md"
+    "../../README.md"
   ],
   "main": "./dist/ui-library.umd.cjs",
   "module": "./dist/ui-library.js",
