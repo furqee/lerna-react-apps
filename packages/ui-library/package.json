@@ -2,7 +2,7 @@
   "name": "ui-library",
   "private": false,
   "type": "module",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "main": "./dist/ui-library.umd.cjs",
   "module": "./dist/ui-library.js",
   "types": "dist/types/index.d.ts",
