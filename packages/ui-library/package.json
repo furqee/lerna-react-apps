@@ -2,7 +2,7 @@
   "name": "@furqe/ui-library",
   "private": false,
   "type": "module",
-  "version": "1.0.2",
+  "version": "1.0.1",
   "main": "./dist/ui-library.umd.cjs",
   "module": "./dist/ui-library.js",
   "types": "dist/types/index.d.ts",
@@ -20,5 +20,7 @@
     "react": "^17.0.0 || ^18.0.0",
     "react-dom": "^17.0.0 || ^18.0.0"
   },
-  "gitHead": "d269337b84bb01bbf857d8101d8ad67543fef82b"
+  "publishConfig": {
+    "access": "public"
+  }
 }
