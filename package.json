@@ -57,7 +57,8 @@
   "lint-staged": {
     "packages/*/src/*.{ts,tsx}": [
       "yarn format:ui-library",
-      "yarn lint:fix:ui-library"
+      "yarn lint:fix:ui-library",
+      "yarn build"
     ]
   }
 }
