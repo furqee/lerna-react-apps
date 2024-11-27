@@ -65,8 +65,4 @@ Please read the [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of co
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-```
-
-```
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
