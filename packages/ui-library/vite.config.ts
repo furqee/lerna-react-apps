@@ -8,4 +8,11 @@ export default getBaseConfig({
     name: "UILibrary",
     fileName: "ui-library",
   },
+  resolve: {
+    alias: {
+      "@components": path.resolve(__dirname, "./src/components"),
+      "@styles": path.resolve(__dirname, "./src/styles"),
+      "@types": path.resolve(__dirname, "./src/types"),
+    },
+  },
 });

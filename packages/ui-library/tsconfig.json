@@ -3,7 +3,12 @@
   "compilerOptions": {
     "rootDir": "./src",
     "outDir": "./dist",
-    "declarationDir": "./dist/types"
+    "declarationDir": "./dist/types",
+    "paths": {
+      "@components/*": ["./src/components/*"],
+      "@styles/*": ["./src/styles/*"],
+      "@types": ["./src/types"]
+    }
   },
   "include": ["src/**/*.ts", "src/**/*.tsx"]
 }

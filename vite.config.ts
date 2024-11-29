@@ -8,13 +8,16 @@ const isExternal = (id: string) => !id.startsWith(".") && !path.isAbsolute(id);
 
 export const getBaseConfig = ({
   plugins = [],
+  resolve = null,
   lib,
 }: {
   plugins?: any[];
+  resolve?: any;
   lib: any;
 }) =>
   defineConfig({
     plugins: [react(), ...plugins],
+    resolve,
     build: {
       lib,
       rollupOptions: {
@@ -23,6 +26,16 @@ export const getBaseConfig = ({
           globals: {
             react: "React",
           },
+        },
+      },
+    },
+    css: {
+      preprocessorOptions: {
+        scss: {
+          api: "modern-compiler", // or "modern", "legacy"
+          importers: [
+            // ...
+          ],
         },
       },
     },
