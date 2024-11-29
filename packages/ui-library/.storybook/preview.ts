@@ -1,6 +1,6 @@
-import commponPreviews from "../../../.storybook/preview";
+import commonPreviews from "../../../.storybook/preview";
 
 const preview = {
-  ...commponPreviews,
+  ...commonPreviews,
 };
 export default preview;
