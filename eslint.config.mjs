@@ -34,7 +34,10 @@ export default tseslint.config(
       },
       "import/resolver": {
         typescript: {
-          project: "packages/*/tsconfig.json",
+          project: [
+            "./tsconfig.json", // Root tsconfig
+            "./packages/*/tsconfig.json", // All package-specific tsconfigs
+          ],
         },
       },
     },
