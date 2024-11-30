@@ -1,0 +1,40 @@
+@use "@styles/variables";
+
+.badge {
+  padding: 0.2rem 0.5rem;
+  border-radius: 1rem;
+  text-transform: capitalize;
+  margin-bottom: 0.5rem;
+  font-size: 0.5625rem;
+  font-weight: 500;
+
+  &.primary {
+    border: 1px solid variables.$primary-color;
+    color: variables.$primary-color;
+  }
+
+  &.secondary {
+    border: 1px solid variables.$secondary-color;
+    color: variables.$secondary-color;
+  }
+
+  &.success {
+    border: 1px solid variables.$success-color;
+    color: variables.$success-color;
+  }
+
+  &.danger {
+    border: 1px solid variables.$danger-color;
+    color: variables.$danger-color;
+  }
+
+  &.warning {
+    border: 1px solid variables.$warning-color;
+    color: variables.$warning-color;
+  }
+
+  &.info {
+    border: 1px solid variables.$info-color;
+    color: variables.$info-color;
+  }
+}

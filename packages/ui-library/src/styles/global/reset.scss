@@ -1,0 +1,53 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 1rem;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  font-size: 16px;
+  font-family: $font;
+  // If you want to scal overally font use this
+
+  @media only screen and (max-width: $bp-small) {
+    font-size: 14px;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex; /* Optional: Makes the body a flex container */
+  flex-direction: column; /* Optional: Arranges children vertically */
+  background-color: $light;
+}
+
+// header {
+//   display: flex;
+//   flex-direction: column;
+//   padding: pxToRem(64) pxToRem(20) pxToRem(24) pxToRem(20);
+//   row-gap: pxToRem(18);
+// }
+
+main {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}

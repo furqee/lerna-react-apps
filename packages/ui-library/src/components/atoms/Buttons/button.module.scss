@@ -1,0 +1,36 @@
+@use "@styles/variables";
+
+.button {
+  padding: 5px 10px;
+  border-radius: 4px;
+
+  &.primary {
+    border: 1px solid variables.$primary-color;
+    color: variables.$primary-color;
+  }
+
+  &.secondary {
+    border: 1px solid variables.$secondary-color;
+    color: variables.$secondary-color;
+  }
+
+  &.success {
+    border: 1px solid variables.$success-color;
+    color: variables.$success-color;
+  }
+
+  &.danger {
+    border: 1px solid variables.$danger-color;
+    color: variables.$danger-color;
+  }
+
+  &.warning {
+    border: 1px solid variables.$warning-color;
+    color: variables.$warning-color;
+  }
+
+  &.info {
+    border: 1px solid variables.$info-color;
+    color: variables.$info-color;
+  }
+}

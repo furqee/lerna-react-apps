@@ -1,0 +1,31 @@
+@use "@styles/variables";
+
+.label {
+  font-size: 0.625rem;
+  font-weight: 400;
+  margin-top: 0.5rem;
+
+  &.primary {
+    color: variables.$primary-color;
+  }
+
+  &.secondary {
+    color: variables.$secondary-color;
+  }
+
+  &.success {
+    color: variables.$success-color;
+  }
+
+  &.danger {
+    color: variables.$danger-color;
+  }
+
+  &.warning {
+    color: variables.$warning-color;
+  }
+
+  &.info {
+    color: variables.$info-color;
+  }
+}
