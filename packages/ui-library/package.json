@@ -18,7 +18,8 @@
     "lint:fix": "eslint -c ../../eslint.config.mjs --fix",
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "pack": "npm pack"
   },
   "peerDependencies": {
     "react": "^17.0.0 || ^18.0.0",
