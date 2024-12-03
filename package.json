@@ -1,6 +1,6 @@
 {
   "name": "furqe",
-  "private": false,
+  "private": true,
   "workspaces": [
     "packages/*"
   ],
@@ -52,7 +52,8 @@
     "storybook": "^8.4.5",
     "typescript": "~5.6.2",
     "typescript-eslint": "^8.15.0",
-    "vite": "^5.4.11"
+    "vite": "^5.4.11",
+    "vite-plugin-dts": "^4.3.0"
   },
   "lint-staged": {
     "packages/*/src/**/*.{ts,tsx,scss}": [
