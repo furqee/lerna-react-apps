@@ -1,0 +1,28 @@
+{
+  "name": "@furqe/common-library",
+  "private": false,
+  "type": "module",
+  "version": "1.0.0",
+  "files": [
+    "dist",
+    "../../README.md"
+  ],
+  "main": "./dist/common-library.umd.cjs",
+  "module": "./dist/common-library.js",
+  "types": "dist/types/index.d.ts",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "format": "prettier --write \"**/src/*.{ts,tsx}\"",
+    "lint": "eslint -c ../../eslint.config.mjs",
+    "lint:fix": "eslint -c ../../eslint.config.mjs --fix",
+    "pack": "npm pack"
+  },
+  "dependencies": {
+    "@furqe/config-library": "^1.0.0",
+    "axios": "^1.7.8"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
