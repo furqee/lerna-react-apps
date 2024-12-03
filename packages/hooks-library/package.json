@@ -1,0 +1,32 @@
+{
+  "name": "@furqe/hooks-library",
+  "private": false,
+  "type": "module",
+  "version": "1.0.0",
+  "files": [
+    "dist",
+    "../../README.md"
+  ],
+  "main": "./dist/hooks-library.umd.cjs",
+  "module": "./dist/hooks-library.js",
+  "types": "dist/types/index.d.ts",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "format": "prettier --write \"**/src/*.{ts,tsx}\"",
+    "lint": "eslint -c ../../eslint.config.mjs",
+    "lint:fix": "eslint -c ../../eslint.config.mjs --fix",
+    "pack": "npm pack"
+  },
+  "dependencies": {
+    "@furqe/common-library": "^1.0.0",
+    "@tanstack/react-query": "^5.62.2"
+  },
+  "peerDependencies": {
+    "react": "^17.0.0 || ^18.0.0",
+    "react-dom": "^17.0.0 || ^18.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
