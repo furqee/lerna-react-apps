@@ -53,6 +53,8 @@ export default tseslint.config(
       ...reactHooks.configs.recommended.rules,
       ...prettierPlugin.configs.recommended.rules,
       ...eslintConfigPrettier.rules,
+      "@typescript-eslint/no-unused-vars": ["warn"],
+      "@typescript-eslint/no-explicit-any": ["warn"],
       "react/react-in-jsx-scope": ["off"],
       "react/jsx-uses-react": ["off"],
       "react/jsx-props-no-spreading": ["warn"],
