@@ -1,0 +1,14 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "rootDir": "./src",
+    "outDir": "./dist",
+    "declarationDir": "./dist/types",
+    "baseUrl": ".", // Ensures paths are relative to the package root
+    "paths": {
+      "@types": ["./src/types"]
+    }
+  },
+  "include": ["src/**/*.ts", "src/**/*.tsx", "src/types/*.d.ts"],
+  "exclude": ["node_modules", "dist"]
+}
