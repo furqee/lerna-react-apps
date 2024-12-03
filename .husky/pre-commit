@@ -1,2 +1,6 @@
 npx --no-install lint-staged
+yarn lint:fix:common-library
+yarn lint:fix:config-library
+yarn lint:fix:hooks-library
 yarn lint:fix:ui-library
+yarn build
