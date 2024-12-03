@@ -25,6 +25,11 @@ export const getBaseConfig = ({
         output: {
           globals: {
             react: "React",
+            axios: "axios",
+            "@furqe/config-library": "ConfigLibrary",
+            "@tanstack/react-query": "ReactQuery",
+            "react/jsx-runtime": "jsxRuntime",
+            "@libs/react-query/query-options": "QueryOptions",
           },
         },
       },
