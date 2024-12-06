@@ -9,5 +9,11 @@ export default getBaseConfig({
     name: "ConfigLibrary",
     fileName: "config-library",
   },
-  plugins: [dts({ tsconfigPath: "./tsconfig.json", outDir: "dist/types" })],
+  plugins: [
+    dts({
+      rollupTypes: true,
+      tsconfigPath: path.resolve(__dirname, "tsconfig.json"),
+      outDir: "dist/types",
+    }),
+  ],
 });
