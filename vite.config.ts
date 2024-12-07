@@ -3,8 +3,30 @@
 import react from "@vitejs/plugin-react";
 import path from "path";
 import { defineConfig } from "vite";
+import fs from "fs";
 
 const isExternal = (id: string) => !id.startsWith(".") && !path.isAbsolute(id);
+
+const generateGlobals = () => {
+  const pkg = JSON.parse(fs.readFileSync("./package.json", "utf-8"));
+  const dependencies = Object.keys(pkg.dependencies || {});
+  const peerDependencies = Object.keys(pkg.peerDependencies || {});
+  const deps = [...dependencies, ...peerDependencies];
+
+  return deps.reduce(
+    (globals: { [key: string]: string }, dep) => {
+      if (!globals[dep]) {
+        globals[dep] = dep.replace(/-/g, "_"); // Adjust naming logic as needed
+      }
+      return globals;
+    },
+    {
+      react: "React",
+      "react-dom": "ReactDOM",
+      "react/jsx-runtime": "jsx",
+    },
+  );
+};
 
 export const getBaseConfig = ({
   plugins = [],
@@ -23,14 +45,7 @@ export const getBaseConfig = ({
       rollupOptions: {
         external: isExternal,
         output: {
-          globals: {
-            react: "React",
-            axios: "axios",
-            "@furqe/config-library": "ConfigLibrary",
-            "@tanstack/react-query": "ReactQuery",
-            "react/jsx-runtime": "jsxRuntime",
-            "@libs/react-query/query-options": "QueryOptions",
-          },
+          globals: generateGlobals(),
         },
       },
     },
