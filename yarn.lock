@@ -15,6 +15,60 @@
     "@jridgewell/gen-mapping" "^0.3.5"
     "@jridgewell/trace-mapping" "^0.3.24"
 
+"@ast-grep/napi-darwin-arm64@0.22.6":
+  version "0.22.6"
+  resolved "https://registry.yarnpkg.com/@ast-grep/napi-darwin-arm64/-/napi-darwin-arm64-0.22.6.tgz#34e9146234de6a7c965ed45335d67863ad96ca95"
+  integrity sha512-L9rEGJ8fNi5LxbZj860wbXxjX7DLNV799zcTaPOSzYadvNyhMY3LWvDXd45Vtx6Dh8QRtCoEMQmw8KaRCEjm9A==
+
+"@ast-grep/napi-darwin-x64@0.22.6":
+  version "0.22.6"
+  resolved "https://registry.yarnpkg.com/@ast-grep/napi-darwin-x64/-/napi-darwin-x64-0.22.6.tgz#521470adf988e1f64e5912ec41afad3f958fc9ff"
+  integrity sha512-0iuM6iDJNhcPd6a/JJr64AallR7ttGW/MvUujfQdvJEZY5p9LK35xm23dULznW0tIMgwtMKPRaprgk8LPondKg==
+
+"@ast-grep/napi-linux-arm64-gnu@0.22.6":
+  version "0.22.6"
+  resolved "https://registry.yarnpkg.com/@ast-grep/napi-linux-arm64-gnu/-/napi-linux-arm64-gnu-0.22.6.tgz#808008fd5952733e589558d5ac4a5746b84a1d55"
+  integrity sha512-9PAqNJlAQfFm1RW0DVCM/S4gFHdppxUTWacB3qEeJZXgdLnoH0KGQa4z3Xo559SPYDKZy0VnY02mZ3XJ+v6/Vw==
+
+"@ast-grep/napi-linux-x64-gnu@0.22.6":
+  version "0.22.6"
+  resolved "https://registry.yarnpkg.com/@ast-grep/napi-linux-x64-gnu/-/napi-linux-x64-gnu-0.22.6.tgz#3f087687560b33ad9a5b232ff4e6780cc8367339"
+  integrity sha512-nZf+gxXVrZqvP1LN6HwzOMA4brF3umBXfMequQzv8S6HeJ4c34P23F0Tw8mHtQpVYP9PQWJUvt3LJQ8Xvd5Hiw==
+
+"@ast-grep/napi-linux-x64-musl@0.22.6":
+  version "0.22.6"
+  resolved "https://registry.yarnpkg.com/@ast-grep/napi-linux-x64-musl/-/napi-linux-x64-musl-0.22.6.tgz#dfa09e6e947f266084b30080476e8a1e25aefc73"
+  integrity sha512-gcJeBMgJQf2pZZo0lgH0Vg4ycyujM7Am8VlomXhavC/dPpkddA1tiHSIC4fCNneLU1EqHITy3ALSmM4GLdsjBw==
+
+"@ast-grep/napi-win32-arm64-msvc@0.22.6":
+  version "0.22.6"
+  resolved "https://registry.yarnpkg.com/@ast-grep/napi-win32-arm64-msvc/-/napi-win32-arm64-msvc-0.22.6.tgz#ac0f092c0dad39a05b8cb10430cdc99eb87eebfc"
+  integrity sha512-YDDzvPIyl4ti8xZfjvGSGVCX9JJjMQjyWPlXcwRpiLRnHThtHTDL8PyE2yq+gAPuZ28QbrygMkP9EKXIyYFVcQ==
+
+"@ast-grep/napi-win32-ia32-msvc@0.22.6":
+  version "0.22.6"
+  resolved "https://registry.yarnpkg.com/@ast-grep/napi-win32-ia32-msvc/-/napi-win32-ia32-msvc-0.22.6.tgz#d4ca06d33a59760aa3870baffa296720ffb01b19"
+  integrity sha512-w5P0MDcBD3bifC2K9nCDEFYacy8HQnXdf6fX6cIE/7xL8XEDs6D1lQjGewrZDcMAXVXUQfupj4P27ZsJRmuIoQ==
+
+"@ast-grep/napi-win32-x64-msvc@0.22.6":
+  version "0.22.6"
+  resolved "https://registry.yarnpkg.com/@ast-grep/napi-win32-x64-msvc/-/napi-win32-x64-msvc-0.22.6.tgz#82c3a7557336c0aa9809ac8ccd5ec573b907b727"
+  integrity sha512-1aaHvgsCBwUP0tDf4HXPMpUV/nUwsOWgRCiBc2zIJjdEjT9TTk795EIX9Z1Nc0OMCrxVEceyiKcYTofXa0Fpxw==
+
+"@ast-grep/napi@^0.22.3":
+  version "0.22.6"
+  resolved "https://registry.yarnpkg.com/@ast-grep/napi/-/napi-0.22.6.tgz#473c4398fbafb39277c99b298f08d342f507eabe"
+  integrity sha512-kNF87HiI4omHC7VzyBZSvqOAXtMlSDRF2YX+O5ya0XKv/7/GYms1opLQ+BQ9twLLDj0WsSFX4MYg0TrinZTxTg==
+  optionalDependencies:
+    "@ast-grep/napi-darwin-arm64" "0.22.6"
+    "@ast-grep/napi-darwin-x64" "0.22.6"
+    "@ast-grep/napi-linux-arm64-gnu" "0.22.6"
+    "@ast-grep/napi-linux-x64-gnu" "0.22.6"
+    "@ast-grep/napi-linux-x64-musl" "0.22.6"
+    "@ast-grep/napi-win32-arm64-msvc" "0.22.6"
+    "@ast-grep/napi-win32-ia32-msvc" "0.22.6"
+    "@ast-grep/napi-win32-x64-msvc" "0.22.6"
+
 "@babel/code-frame@^7.0.0", "@babel/code-frame@^7.10.4", "@babel/code-frame@^7.25.9", "@babel/code-frame@^7.26.0":
   version "7.26.2"
   resolved "https://registry.yarnpkg.com/@babel/code-frame/-/code-frame-7.26.2.tgz#4b5fab97d33338eff916235055f0ebc21e573a85"
@@ -489,6 +543,16 @@
   dependencies:
     "@jridgewell/resolve-uri" "^3.1.0"
     "@jridgewell/sourcemap-codec" "^1.4.14"
+
+"@laynezh/vite-plugin-lib-assets@^0.5.26":
+  version "0.5.26"
+  resolved "https://registry.yarnpkg.com/@laynezh/vite-plugin-lib-assets/-/vite-plugin-lib-assets-0.5.26.tgz#8b48808611cb11d893f4ca30fd02858390e3860e"
+  integrity sha512-WObL2hZZyAYHQXOzGs7TyWKJUrIOF9IABEaiwtwIY08/repd14dLfig11LV4EKSIEkfQpITSQoWsjuyhrkldpw==
+  dependencies:
+    escape-string-regexp "^4.0.0"
+    loader-utils "^3.2.1"
+    mrmime "^1.0.1"
+    semver "^7.6.0"
 
 "@lerna/create@8.1.9":
   version "8.1.9"
@@ -4960,6 +5024,11 @@ load-json-file@^4.0.0:
     pify "^3.0.0"
     strip-bom "^3.0.0"
 
+loader-utils@^3.2.1:
+  version "3.3.1"
+  resolved "https://registry.yarnpkg.com/loader-utils/-/loader-utils-3.3.1.tgz#735b9a19fd63648ca7adbd31c2327dfe281304e5"
+  integrity sha512-FMJTLMXfCLMLfJxcX9PFqX5qD88Z5MRGaZCVzfuqeZSPsyiBzs+pahDQjbIWz2QIzPZz0NX9Zy4FX3lmK6YHIg==
+
 local-pkg@^0.5.0:
   version "0.5.1"
   resolved "https://registry.yarnpkg.com/local-pkg/-/local-pkg-0.5.1.tgz#69658638d2a95287534d4c2fff757980100dbb6d"
@@ -5074,7 +5143,7 @@ magic-string@^0.30.0:
   dependencies:
     "@jridgewell/sourcemap-codec" "^1.5.0"
 
-magic-string@^0.30.11:
+magic-string@^0.30.10, magic-string@^0.30.11:
   version "0.30.14"
   resolved "https://registry.yarnpkg.com/magic-string/-/magic-string-0.30.14.tgz#e9bb29870b81cfc1ec3cc656552f5a7fcbf19077"
   integrity sha512-5c99P1WKTed11ZC0HMJOj6CDIue6F8ySu+bJL+85q1zBEIY8IklrJ1eiKC2NDRh3Ct3FcvmJPyQHb9erXMTJNw==
@@ -5354,6 +5423,11 @@ modify-values@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/modify-values/-/modify-values-1.0.1.tgz#b3939fa605546474e3e3e3c63d64bd43b4ee6022"
   integrity sha512-xV2bxeN6F7oYjZWTe/YPAy6MN2M+sL4u/Rlm2AHCIVGfo2p1yGmBHQ6vHehl4bRTZBdHu3TSkWdYgkwpYzAGSw==
+
+mrmime@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/mrmime/-/mrmime-1.0.1.tgz#5f90c825fad4bdd41dc914eff5d1a8cfdaf24f27"
+  integrity sha512-hzzEagAgDyoU1Q6yg5uI+AorQgdvMCur3FcKf7NhMKWsaYg+RnbTyHRa/9IlLF9rf455MOCtcqqrQQ83pPP7Uw==
 
 ms@^2.1.1, ms@^2.1.3:
   version "2.1.3"
@@ -7565,6 +7639,15 @@ vite-plugin-dts@^4.3.0:
     kolorist "^1.8.0"
     local-pkg "^0.5.0"
     magic-string "^0.30.11"
+
+vite-plugin-lib-inject-css@^2.1.1:
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/vite-plugin-lib-inject-css/-/vite-plugin-lib-inject-css-2.1.1.tgz#39c5bb30dbb40c70e0d41a334097ce9b77e8e740"
+  integrity sha512-RIMeVnqBK/8I0E9nnQWzws6pdj5ilRMPJSnXYb6nWxNR4EmDPnksnb/ACoR5Fy7QfzULqS4gtQMrjwnNCC9zoA==
+  dependencies:
+    "@ast-grep/napi" "^0.22.3"
+    magic-string "^0.30.10"
+    picocolors "^1.0.0"
 
 vite@^6.0.2:
   version "6.0.2"
