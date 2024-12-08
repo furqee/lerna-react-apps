@@ -56,7 +56,8 @@
   },
   "lint-staged": {
     "packages/*/src/**/*.{ts,tsx,scss}": [
-      "prettier --write"
+      "prettier --write",
+      "eslint -c eslint.config.mjs --fix"
     ]
   }
 }
