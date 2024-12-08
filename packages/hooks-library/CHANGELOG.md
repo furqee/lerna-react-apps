@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.3](https://github.com/furqee/lerna-react-apps/compare/@furqe/hooks-library@1.0.2...@furqe/hooks-library@1.0.3) (2024-12-08)
+
+### Bug Fixes
+
+- Aliases as internal dependencies consideration added, dts removed from every library and make it global for all libraries. ([375c34a](https://github.com/furqee/lerna-react-apps/commit/375c34acf5cd63de6c9108e1f62e4beda3985a99))
+- **hooks:** React query as peer dependency added. ([68a06fa](https://github.com/furqee/lerna-react-apps/commit/68a06fa6f9128afbd1ff3515a4e1783fbdf0b588))
+
 ## [1.0.2](https://github.com/furqee/lerna-react-apps/compare/@furqe/hooks-library@1.0.1...@furqe/hooks-library@1.0.2) (2024-12-08)
 
 ### Bug Fixes

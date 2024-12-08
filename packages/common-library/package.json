@@ -2,7 +2,7 @@
   "name": "@furqe/common-library",
   "private": false,
   "type": "module",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "files": [
     "dist",
     "../../README.md"
@@ -19,7 +19,7 @@
     "pack": "npm pack"
   },
   "dependencies": {
-    "@furqe/config-library": "^1.0.2",
+    "@furqe/config-library": "^1.0.3",
     "axios": "^1.7.8"
   },
   "publishConfig": {
