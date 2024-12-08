@@ -4,8 +4,21 @@ import react from "@vitejs/plugin-react";
 import path from "path";
 import { defineConfig } from "vite";
 import fs from "fs";
+import dts from "vite-plugin-dts";
 
-const isExternal = (id: string) => !id.startsWith(".") && !path.isAbsolute(id);
+const getAliases = () => {
+  const tsConfig = JSON.parse(fs.readFileSync("./tsconfig.json", "utf-8"));
+  const paths = tsConfig.compilerOptions.paths || {};
+  return Object.keys(paths).map((alias) => alias.replace("/*", ""));
+};
+
+const isExternal = (id: string) => {
+  const aliases = getAliases();
+  if (aliases.some((alias) => id.startsWith(alias))) {
+    return false;
+  }
+  return !id.startsWith(".") && !path.isAbsolute(id);
+};
 
 const generateGlobals = () => {
   const pkg = JSON.parse(fs.readFileSync("./package.json", "utf-8"));
@@ -38,7 +51,15 @@ export const getBaseConfig = ({
   lib: any;
 }) =>
   defineConfig({
-    plugins: [react(), ...plugins],
+    plugins: [
+      react(),
+      dts({
+        rollupTypes: true,
+        tsconfigPath: "tsconfig.json",
+        outDir: "dist/types",
+      }),
+      ...plugins,
+    ],
     resolve,
     build: {
       lib,

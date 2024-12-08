@@ -4,7 +4,7 @@
     "rootDir": "./src",
     "outDir": "./dist",
     "declarationDir": "./dist/types",
-    "baseUrl": ".", // Ensures paths are relative to the package root
+    "baseUrl": ".",
     "paths": {
       "@libs/*": ["./src/libs/*"],
       "@types": ["./src/types"]

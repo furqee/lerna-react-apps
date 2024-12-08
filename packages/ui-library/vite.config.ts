@@ -1,17 +1,11 @@
 /* eslint-disable import/no-nodejs-modules */
 import * as path from "path";
 import { getBaseConfig } from "../../vite.config";
-import dts from "vite-plugin-dts";
 import libAssetsPlugin from "@laynezh/vite-plugin-lib-assets";
 import { libInjectCss } from "vite-plugin-lib-inject-css";
 
 export default getBaseConfig({
   plugins: [
-    dts({
-      rollupTypes: true,
-      tsconfigPath: path.resolve(__dirname, "tsconfig.json"),
-      outDir: "dist/types",
-    }),
     libAssetsPlugin({
       limit: 0,
       name: (resourcePath, resourceQuery) => {
