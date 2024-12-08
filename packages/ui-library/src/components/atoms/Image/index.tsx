@@ -1,5 +1,6 @@
 import { useState } from "react";
-
+import testSvg from "../../../assets/repo.svg";
+import testPng from "../../../assets/test.jpg";
 interface ImageProps extends React.ImgHTMLAttributes<HTMLImageElement> {
   /** Source URL of the image */
   src: string;
@@ -26,12 +27,22 @@ export default function Image({
     }
   };
   return (
-    <img
-      src={currentSrc}
-      alt={alt}
-      className={className}
-      onError={handleError}
-      {...rest}
-    />
+    <>
+      {/* Test Svg */}
+      <img
+        src={testSvg}
+        alt={alt}
+        className={className}
+        onError={handleError}
+        {...rest}
+      />
+      <img
+        src={testPng}
+        alt={alt}
+        className={className}
+        onError={handleError}
+        {...rest}
+      />
+    </>
   );
 }
