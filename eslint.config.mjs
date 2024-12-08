@@ -8,6 +8,7 @@ import importPlugin from "eslint-plugin-import";
 import prettierPlugin from "eslint-plugin-prettier";
 import eslintConfigPrettier from "eslint-config-prettier";
 import storyBookPlugin from "eslint-plugin-storybook";
+import pluginQuery from "@tanstack/eslint-plugin-query";
 
 export default tseslint.config(
   { ignores: ["dist"] },
@@ -16,6 +17,7 @@ export default tseslint.config(
       js.configs.recommended,
       ...tseslint.configs.recommended,
       importPlugin.flatConfigs.recommended,
+      ...pluginQuery.configs["flat/recommended"],
     ],
     // files: ["src/**/*.{ts,tsx}"], // Target TypeScript files
     languageOptions: {
